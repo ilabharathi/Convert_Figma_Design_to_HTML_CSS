@@ -1,0 +1,81 @@
+
+:root {
+	/* responsive margins / paddings */
+	--margin-sm: 16px;
+	--margin-md: 32px;
+}
+
+* {
+	--min-screen-size: 430;
+	--max-screen-size: 1728;
+	--interpolate-diff: calc(var(--max-font-size) - var(--min-font-size));
+	--interpolate: clamp(calc(var(--min-font-size) * 1px), calc((var(--min-font-size) * 1px) + var(--interpolate-diff) * ((100vw - calc(var(--min-screen-size) * 1px)) / (var(--max-screen-size) - var(--min-screen-size)))), calc(var(--max-font-size) * 1px));
+}
+
+html {
+	height: 100%;
+	font-size: 16px;
+}
+
+
+
+/* text utility classes */
+
+.subtitle-dark {
+	color: #1f1f1f;
+	--min-font-size: 28; --max-font-size: 58; font-size: var(--interpolate);
+	font-family: 'Inter';
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0px;
+}
+
+.subtitle-white {
+	color: #fff;
+	--min-font-size: 17; --max-font-size: 24; font-size: var(--interpolate);
+	font-family: 'Inter';
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0px;
+}
+
+.subtitle-gray {
+	color: #545454;
+	--min-font-size: 17; --max-font-size: 24; font-size: var(--interpolate);
+	font-weight: 500;
+	line-height: 1.652;
+}
+
+.text-white {
+	color: #fff;
+	font-size: 24px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0px;
+}
+
+.sub-text {
+	font-size: 70px;
+}
+
+
+
+/* ui objects utility classes */
+
+.btn-dark {
+	width: 275px;
+	display: flex;
+	background-color: #1f1f1f;
+	padding: 0 10px;
+	border-radius: 4px;
+}
+
+
+
+/* button hover utility classes */
+
+.hover-bright:hover {
+	filter: brightness(1.2);
+}
