@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Looks Fashion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Serif:wght@600&family=Roboto+Slab:wght@500;700&family=Rufina:wght@700&display=swap" rel="stylesheet">
+<style>
+    /* Fallback for Elephant font */
+    @font-face {
+        font-family: 'Elephant';
+        src: local('Elephant'), local('Georgia Bold'), local('Times New Roman Bold'), serif;
+        font-weight: 400;
+    }
+</style>
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+#section-header-hero {
+        padding-top: 34px;
+        padding-bottom: 80px;
+    }
+    .header-hero-background {
+        background-color: var(--light-green-bg);
+    }
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .logo {
+        font-family: 'Elephant', serif;
+        font-size: 48px;
+        color: var(--primary-green);
+        font-weight: 400;
+    }
+    .main-nav ul {
+        display: flex;
+        gap: 54px;
+    }
+    .main-nav a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--primary-green);
+    }
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .cart-icon {
+        position: relative;
+    }
+    .cart-notification {
+        position: absolute;
+        top: 22px;
+        right: -2px;
+        width: 10px;
+        height: 10px;
+        background-color: #FF4D4D; /* Color not in summary, assumed from visual */
+        border-radius: 50%;
+        box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.15);
+    }
+    .btn {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .btn-login {
+        color: var(--primary-green);
+        border: 2px solid var(--primary-green);
+        padding: 9px 41px;
+    }
+    .hero-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px;
+        margin-top: 100px;
+    }
+    .hero-content {
+        max-width: 650px;
+    }
+    .hero-title {
+        font-family: 'Rufina', serif;
+        font-weight: 700;
+        font-size: 86px;
+        line-height: 1.2;
+        color: var(--primary-green);
+    }
+    .hero-subtitle {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #267d49;
+        margin-top: 27px;
+        max-width: 565px;
+    }
+    .btn-explore {
+        display: inline-block;
+        background-color: var(--primary-green);
+        color: var(--white);
+        padding: 22px 60px;
+        margin-top: 54px;
+        box-shadow: 6px 33px 59px 0px rgba(0, 0, 0, 0.3);
+    }
+    .hero-image-wrapper {
+        position: relative;
+        justify-self: center;
+        width: 570px;
+        height: 717px;
+    }
+    .hero-image-bg {
+        position: absolute;
+        inset: 0;
+        background-color: #6bc785;
+        border-radius: 141px 45px 150px 82px;
+    }
+    .hero-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 141px 45px 150px 82px;
+    }
+    .deco-1 {
+        position: absolute;
+        left: 24px;
+        bottom: 44px;
+        width: 119px;
+    }
+    .deco-2 {
+        position: absolute;
+        right: 12px;
+        top: 155px;
+        width: 119px;
+    }
+    .blur-effect {
+        position: absolute;
+        left: 328px;
+        top: 579px;
+        filter: blur(44px);
+        opacity: 0.5;
+    }
+    @media (max-width: 1200px) {
+        .hero-title { font-size: 64px; }
+        .hero-subtitle { font-size: 20px; }
+        .main-nav ul { gap: 30px; }
+        .main-nav a { font-size: 18px; }
+    }
+    @media (max-width: 992px) {
+        .main-nav { display: none; } /* Simple hide for mobile, would need JS for hamburger */
+        .hero-section { grid-template-columns: 1fr; text-align: center; }
+        .hero-content { order: 2; }
+        .hero-image-wrapper { order: 1; margin-bottom: 40px; width: 80%; max-width: 450px; height: auto; aspect-ratio: 570/717; }
+        .hero-subtitle { margin-left: auto; margin-right: auto; }
+    }
+
+/* CSS for section section:bestselling */
+.bestselling-section {
+        padding: 120px 0;
+        background-color: var(--white);
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 43px;
+        margin-top: 80px;
+    }
+    .product-card {
+        text-align: center;
+    }
+    .product-image-container {
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 31px;
+    }
+    .product-image-container img {
+        width: 100%;
+        height: 566px;
+        object-fit: cover;
+    }
+    .product-info h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        color: var(--text-dark);
+        margin-bottom: 8px;
+    }
+    .product-meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        color: var(--text-light);
+    }
+    .rating {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+    .rating img {
+        width: 24px;
+        height: 24px;
+    }
+    .product-meta .price {
+        order: -1;
+    }
+    .see-all-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .btn-see-all {
+        border: 2px solid var(--primary-green);
+        border-radius: 3px;
+        padding: 16px 55px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: var(--primary-green);
+        font-size: 22px;
+        font-weight: 500;
+    }
+    @media (max-width: 992px) {
+        .product-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 768px) {
+        .bestselling-section {
+            padding: 80px 0;
+        }
+        .product-grid {
+            grid-template-columns: 1fr;
+        }
+        .product-image-container img {
+            height: 450px;
+        }
+    }
+
+/* CSS for section section:products */
+.products-section {
+        padding: 120px 0;
+        background-color: var(--light-gray-bg);
+    }
+    .product-tabs ul {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 60px;
+        margin-bottom: 76px;
+    }
+    .product-tabs a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        color: var(--text-light);
+        position: relative;
+        padding-bottom: 3px;
+    }
+    .product-tabs a.active {
+        color: var(--primary-green);
+    }
+    .product-tabs a.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-green);
+    }
+    .products-grid-large {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+    }
+    .products-grid-large .product-image-container img {
+        height: 378px;
+    }
+    @media (max-width: 1200px) {
+        .products-grid-large {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    @media (max-width: 992px) {
+        .products-grid-large {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .product-tabs ul {
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+    }
+    @media (max-width: 768px) {
+        .products-section {
+            padding: 80px 0;
+        }
+        .products-grid-large {
+            grid-template-columns: 1fr;
+        }
+    }
+
+/* CSS for section section:offer */
+.offer-section {
+        background-color: var(--light-green-bg);
+        padding: 60px 0;
+    }
+    .offer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 100px;
+    }
+    .offer-image-wrapper {
+        position: relative;
+        width: 596px;
+        height: 596px;
+    }
+    .offer-image {
+        position: relative;
+        z-index: 2;
+        width: 482px;
+        height: 596px;
+        object-fit: cover;
+        margin-left: 81px;
+    }
+    .deco-bg-1 {
+        position: absolute;
+        width: 190px;
+        height: 131px;
+        background-color: rgba(223, 251, 234, 0.5);
+        bottom: 0;
+        left: 98px;
+        z-index: 1;
+    }
+    .deco-3 {
+        position: absolute;
+        left: 41px;
+        bottom: 48px;
+        z-index: 3;
+    }
+    .offer-title {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        font-size: 46px;
+        color: var(--primary-green);
+    }
+    .offer-subtitle {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.67;
+        color: var(--primary-green);
+        margin-top: 21px;
+        max-width: 589px;
+    }
+    .countdown-timer {
+        display: flex;
+        gap: 35px;
+        margin-top: 40px;
+    }
+    .timer-box {
+        width: 100px;
+        height: 100px;
+        background-color: var(--white);
+        border-radius: 3px;
+        box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .timer-box .time {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        color: var(--primary-green);
+    }
+    .timer-box .label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--primary-green);
+    }
+    .btn-buy-now {
+        display: inline-block;
+        background-color: var(--primary-green);
+        color: var(--white);
+        padding: 22px 70px;
+        margin-top: 41px;
+        box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+    }
+    @media (max-width: 1200px) {
+        .offer-container {
+            gap: 40px;
+            grid-template-columns: 45% 55%;
+        }
+        .offer-image-wrapper {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+        }
+        .offer-image {
+            width: 80%;
+            height: 100%;
+            margin-left: 10%;
+        }
+    }
+    @media (max-width: 992px) {
+        .offer-container {
+            grid-template-columns: 1fr;
+        }
+        .offer-image-wrapper {
+            order: 1;
+            margin: 0 auto 40px;
+            max-width: 500px;
+        }
+        .offer-content {
+            order: 2;
+            text-align: center;
+        }
+        .countdown-timer {
+            justify-content: center;
+        }
+    }
+
+/* CSS for section section:designer */
+.designer-section {
+        padding: 120px 0;
+        background-color: var(--white);
+    }
+    .designer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 44px;
+        margin-top: 80px;
+    }
+    .category-card {
+        text-align: center;
+    }
+    .category-image-container {
+        border-radius: 3px;
+        overflow: hidden;
+        margin-bottom: 25px;
+    }
+    .category-image-container img {
+        width: 100%;
+        height: 566px;
+        object-fit: cover;
+    }
+    .category-card h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        color: var(--text-dark);
+        margin-bottom: 5px;
+    }
+    .category-card p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.43;
+        color: var(--text-dark);
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    @media (max-width: 992px) {
+        .designer-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media (max-width: 768px) {
+        .designer-section {
+            padding: 80px 0;
+        }
+        .category-image-container img {
+            height: 450px;
+        }
+    }
+
+/* CSS for section section:testimonials */
+.testimonials-section {
+        padding: 120px 0;
+        background-color: var(--light-gray-bg);
+    }
+    .testimonials-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 47px;
+        margin-top: 100px;
+    }
+    .testimonial-card {
+        position: relative;
+        padding: 62px 16px 30px 16px;
+        border-radius: 3px;
+        background-color: var(--white);
+        box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+    }
+    .testimonial-card.card-green {
+        background-color: var(--light-green-bg);
+    }
+    .testimonial-card .quote-mark {
+        position: absolute;
+        top: 7px;
+        left: 16px;
+        font-family: 'Arial Rounded MT Bold', sans-serif;
+        font-size: 60px;
+        line-height: 1.15;
+        color: var(--primary-green);
+    }
+    .testimonial-card h4 {
+        font-family: 'Roboto Serif', serif;
+        font-weight: 600;
+        font-size: 22px;
+        color: var(--primary-green);
+        margin-bottom: 30px;
+    }
+    .testimonial-card p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--text-muted);
+    }
+    .testimonial-card.card-green p {
+        color: var(--primary-green);
+    }
+    .testimonial-nav {
+        display: flex;
+        justify-content: center;
+        gap: 101px;
+        margin-top: 125px;
+    }
+    .nav-arrow {
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0px 7px 51px 0px rgba(0, 0, 0, 0.1);
+    }
+    .nav-arrow.nav-prev {
+        background-color: var(--white);
+    }
+    .nav-arrow.nav-next {
+        background-color: var(--light-green-bg);
+    }
+    @media (max-width: 992px) {
+        .testimonials-wrapper {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        .testimonial-nav {
+            margin-top: 60px;
+        }
+    }
+    @media (max-width: 768px) {
+        .testimonials-section {
+            padding: 80px 0;
+        }
+    }
+
+/* CSS for section section:footer */
+.site-footer {
+        background-color: var(--primary-green);
+        color: var(--white);
+        padding: 100px 0 60px;
+    }
+    .footer-main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        gap: 80px;
+    }
+    .footer-logo {
+        font-family: 'Elephant', serif;
+        font-size: 50px;
+        color: var(--white);
+        display: block;
+        margin-bottom: 25px;
+    }
+    .social-title {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 27px;
+    }
+    .social-links {
+        display: flex;
+        gap: 25px;
+    }
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-col h4 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 54px;
+    }
+    .footer-col ul li {
+        margin-bottom: 18px;
+    }
+    .footer-col ul a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--accent-green);
+    }
+    .subscribe-form {
+        position: relative;
+        width: 100%;
+        max-width: 487px;
+        height: 57px;
+        border: 2px solid var(--accent-green);
+        border-radius: 3px;
+        display: flex;
+    }
+    .subscribe-form input {
+        flex-grow: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0 28px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        color: var(--white);
+    }
+    .subscribe-form input::placeholder {
+        color: var(--white);
+        opacity: 0.8;
+    }
+    .subscribe-form button {
+        background-color: var(--accent-green);
+        border: none;
+        width: 115px;
+        height: 100%;
+        cursor: pointer;
+        color: var(--primary-green);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .footer-divider {
+        border: none;
+        height: 2px;
+        background-color: var(--accent-green);
+        margin: 85px 0 30px;
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: flex-end;
+        gap: 35px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    @media (max-width: 992px) {
+        .footer-main {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+    }
+    @media (max-width: 768px) {
+        .site-footer {
+            padding-top: 60px;
+        }
+        .footer-main {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        .social-links {
+            justify-content: center;
+        }
+        .footer-col h4 {
+            margin-bottom: 20px;
+        }
+        .subscribe-form {
+            margin: 0 auto;
+        }
+        .footer-bottom {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-header-hero">
+    <div class="header-hero-background">
+        <header class="site-header container">
+            <a href="#" class="logo">Looks</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#section-products">Shop</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-icon">
+                    <img src="images/1_267.svg" alt="Shopping Bag">
+                    <span class="cart-notification"></span>
+                </a>
+                <a href="#" class="btn btn-login">Login</a>
+            </div>
+        </header>
+
+        <div id="section-hero" class="hero-section container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover and Find Your Own Fashion!</h1>
+                <p class="hero-subtitle">Explore our curated collection of stylish clothing and accessories tailored to your unique taste.</p>
+                <a href="#" class="btn btn-explore">Explore Now</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <!--merged image-->
+                <div class="hero-image-bg"></div>
+                <img src="images/380f4d876a6e09212a48c77c3792e100104bc00e.png" alt="Fashion model in a green blazer" class="hero-image">
+                <img src="images/1_275.svg" alt="Decorative element" class="deco-1">
+                <img src="images/1_292.svg" alt="Decorative element" class="deco-2">
+                <img src="images/1_273.svg" alt="" class="blur-effect">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section-bestselling" class="bestselling-section">
+    <div class="container">
+        <h2 class="section-title">Best selling</h2>
+        <p class="section-subtitle">Get in on the trend with our curated selection of best-selling styles.</p>
+        <div class="product-grid">
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #93b9a2;">
+                    <img src="images/c91277cf00d88a9d6f761d88c50e17e53587883c.png" alt="Regular Fit Long Sleeve Top">
+                </div>
+                <div class="product-info">
+                    <h3>Regular Fit Long Sleeve Top</h3>
+                    <div class="product-meta">
+                        <span class="price">$38.99</span>
+                        <div class="rating">
+                            <span>5.0</span>
+                            <img src="images/1_120.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #a9d4ba;">
+                    <img src="images/6488026e575045ad2e6591ef838d4bcfad3ef934.png" alt="Black Crop Tailored Jacket">
+                </div>
+                <div class="product-info">
+                    <h3>Black Crop Tailored Jacket</h3>
+                    <div class="product-meta">
+                        <span class="price">$62.99</span>
+                        <div class="rating">
+                            <span>4.9</span>
+                            <img src="images/1_127.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #cadcd0;">
+                    <img src="images/4bfdab1fac6016fba11536ac8604de0aea1b7395.png" alt="Textured Sunset Shirt">
+                </div>
+                <div class="product-info">
+                    <h3>Textured Sunset Shirt</h3>
+                    <div class="product-meta">
+                        <span class="price">$49.99</span>
+                        <div class="rating">
+                            <span>5.0</span>
+                            <img src="images/1_134.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="see-all-wrapper">
+            <a href="#" class="btn-see-all">
+                <span>See all</span>
+                <img src="images/1_115.svg" alt="arrow right">
+            </a>
+        </div>
+    </div>
+</section>
+<section id="section-products" class="products-section">
+    <div class="container">
+        <h2 class="section-title">Our products</h2>
+        <nav class="product-tabs">
+            <ul>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#" class="active">HOT</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="products-grid-large">
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #d9d9d9;">
+                    <img src="images/bf936cef0caa01d70434a2ed2d0370360150bf5e.png" alt="Spread Collar Shirt">
+                </div>
+                <div class="product-info">
+                    <h3>Spread Collar Shirt</h3>
+                    <div class="product-meta">
+                        <span class="price">$48.99</span>
+                        <div class="rating"><span>5.0</span><img src="images/1_170.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #eaebf0;">
+                    <img src="images/d713d91f21e7b28038e5cd1308e6314175d4231b.png" alt="White Solid Formal Shirt">
+                </div>
+                <div class="product-info">
+                    <h3>White Solid Formal Shirt</h3>
+                    <div class="product-meta">
+                        <span class="price">$39.00</span>
+                        <div class="rating"><span>4.9</span><img src="images/1_184.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background: linear-gradient(96deg, #f2f2f2 0%, #eaeaea 100.49%);">
+                    <img src="images/b3edcb282a2884f716a8289668a5bf36aef41869.png" alt="Shine On Me Blouse">
+                </div>
+                <div class="product-info">
+                    <h3>Shine On Me Blouse</h3>
+                    <div class="product-meta">
+                        <span class="price">$42.99</span>
+                        <div class="rating"><span>4.8</span><img src="images/1_198.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #d9d9d9;">
+                    <img src="images/43dbf93701126211f33c8a4147b1bfcfcc6d8e22.png" alt="Gray Solid Padded Jacket">
+                </div>
+                <div class="product-info">
+                    <h3>Gray Solid Padded Jacket</h3>
+                    <div class="product-meta">
+                        <span class="price">$32.99</span>
+                        <div class="rating"><span>4.7</span><img src="images/1_212.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #d9d9d9;">
+                    <img src="images/379382c46ac91e859ec53c4e535b4a8232ee23de.png" alt="Printed Loose T-shirt">
+                </div>
+                <div class="product-info">
+                    <h3>Printed Loose T-shirt</h3>
+                    <div class="product-meta">
+                        <span class="price">$39.99</span>
+                        <div class="rating"><span>5.0</span><img src="images/1_177.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #d9d9d9;">
+                    <img src="images/16103eab62e972ec931381e36a3868cd328fd47a.png" alt="Summer Wind Crop Shirt">
+                </div>
+                <div class="product-info">
+                    <h3>Summer Wind Crop Shirt</h3>
+                    <div class="product-meta">
+                        <span class="price">$39.95</span>
+                        <div class="rating"><span>4.7</span><img src="images/1_191.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #d9d9d9;">
+                    <img src="images/b09a14f8a9f275d70fed27dd1a041faf3c3c6d1d.png" alt="Tailored Jacket">
+                </div>
+                <div class="product-info">
+                    <h3>Tailored Jacket</h3>
+                    <div class="product-meta">
+                        <span class="price">$46.00</span>
+                        <div class="rating"><span>4.9</span><img src="images/1_205.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <div class="product-image-container" style="background-color: #ddece2;">
+                    <img src="images/eccecc9571bf273d78f602b3598feda38bf1c22c.png" alt="Solid Round Neck T-shirt">
+                </div>
+                <div class="product-info">
+                    <h3>Solid Round Neck T-shirt</h3>
+                    <div class="product-meta">
+                        <span class="price">$36.00</span>
+                        <div class="rating"><span>5.0</span><img src="images/1_219.svg" alt="star"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="section-offer" class="offer-section">
+    <div class="container offer-container">
+        <div class="offer-image-wrapper">
+            <!--merged image-->
+            <img src="images/d34b7f54e58a0cde770131dda958359103394f74.png" alt="Woman in sunglasses and green jacket" class="offer-image">
+            <div class="deco-bg-1"></div>
+            <img src="images/1_88.svg" alt="Decorative element" class="deco-3">
+        </div>
+        <div class="offer-content">
+            <h2 class="offer-title">Exclusive offer</h2>
+            <p class="offer-subtitle">Unlock the ultimate style upgrade with our exclusive offer Enjoy savings of up to 40% off on our latest New Arrivals</p>
+            <div class="countdown-timer">
+                <div class="timer-box">
+                    <span class="time">06</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="timer-box">
+                    <span class="time">18</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="timer-box">
+                    <span class="time">48</span>
+                    <span class="label">Min</span>
+                </div>
+            </div>
+            <a href="#" class="btn btn-buy-now">BUY NOW</a>
+        </div>
+    </div>
+</section>
+<section id="section-designer" class="designer-section">
+    <div class="container">
+        <h2 class="section-title">Designer Clothes For You</h2>
+        <p class="section-subtitle">Immerse yourself in the world of luxury fashion with our meticulously crafted designer clothes!</p>
+        <div class="designer-grid">
+            <article class="category-card">
+                <div class="category-image-container" style="background-color: #d3e2d7;">
+                    <img src="images/5ba182dd1d66423d315f71d45aa9671456de3e13.png" alt="Woman with a straw hat and bag">
+                </div>
+                <h3>Accessories</h3>
+                <p>Complete your ensemble with designer accessories such as handbags, scarves, belts, and hats.</p>
+            </article>
+            <article class="category-card">
+                <div class="category-image-container" style="background-color: #d9d9d9;">
+                    <img src="images/0abcae173bb99ea68eed17f45dbb3902e53c2861.png" alt="Woman in a stylish dress">
+                </div>
+                <h3>Dresses</h3>
+                <p>Explore a stunning range of designer dresses, including evening gowns and chic day dresses.</p>
+            </article>
+            <article class="category-card">
+                <div class="category-image-container" style="background-color: #d9d9d9;">
+                    <img src="images/12915434cd211cfeb2ac1ea6c89c2743990919f5.png" alt="Woman in red patterned outerwear">
+                </div>
+                <h3>Outerwear</h3>
+                <p>Browse luxurious designer coats, jackets, and blazers to stay stylishly warm during colder seasons.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="section-testimonials" class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title">Feedback Corner</h2>
+        <div class="testimonials-wrapper">
+            <article class="testimonial-card">
+                <span class="quote-mark">“</span>
+                <h4>Emily Wilson</h4>
+                <p>The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!</p>
+            </article>
+            <article class="testimonial-card card-green">
+                <span class="quote-mark">“</span>
+                <h4>Sarah Thompson</h4>
+                <p>I absolutely love the quality and style of the clothing I purchased from this website. customer service was outstanding, and I received my order quickly. Highly recommended!</p>
+            </article>
+            <article class="testimonial-card">
+                <span class="quote-mark">“</span>
+                <h4>Olivia Martinez</h4>
+                <p>I had a great experience shopping on this website. The clothes I bought are fashionable and comfortable. Highly satisfied!</p>
+            </article>
+        </div>
+        <div class="testimonial-nav">
+            <button class="nav-arrow nav-prev">
+                <img src="images/1_34.svg" alt="Previous">
+            </button>
+            <button class="nav-arrow nav-next">
+                <img src="images/1_29.svg" alt="Next">
+            </button>
+        </div>
+    </div>
+</section>
+<section id="section-footer">
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col footer-brand">
+                    <a href="#" class="footer-logo">Looks</a>
+                    <p class="social-title">Social Media</p>
+                    <div class="social-links">
+                        <a href="#"><img src="images/1_52.svg" alt="Facebook"></a>
+                        <a href="#"><img src="images/1_313.svg" alt="Twitter"></a>
+                        <a href="#"><img src="images/1_317.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Releases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Stay up to date</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>
